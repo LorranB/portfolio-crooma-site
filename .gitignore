@@ -1,0 +1,10 @@
+images/
+fonts/
+phpmailer/
+backups/
+temp/
+*.zip
+*.pdf
+*.log
+.DS_Store
+Thumbs.db
