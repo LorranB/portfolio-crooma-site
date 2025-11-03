@@ -1,6 +1,6 @@
 <!-- Banner ou logo -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/username/crooma-website/main/assets/img/banner.png" width="100%" alt="CROOMA Design Studio Banner">
+  <img src="images/Logos - CROOMA/Logo Principal Horizontal.png" width="20%" alt="CROOMA Design Studio Banner">
 </p>
 
 <h1 align="center">🌙 CROOMA Design Studio</h1>
