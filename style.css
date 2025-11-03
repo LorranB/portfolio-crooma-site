@@ -1,0 +1,633 @@
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url("../fonts/CaviarDreams.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url("../fonts/Caviar_Dreams_Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url("../fonts/CaviarDreams_Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url("../fonts/CaviarDreams_BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    background: url('images/Fundo Estrelado.png') repeat top left / auto rgb(226, 226, 226);
+    font-family: "Anonymous Pro";
+    letter-spacing: -0.01em;
+    color: #202146
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 30px;
+}
+
+.brand-logo-img {
+    max-width: 15vw;
+    height: auto;
+}
+
+.brand-logo-img-mobile {
+    max-width: 30vw;
+    height: auto;
+}
+
+.mobile-logo {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+    min-width: max-content;
+    min-height: auto;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 7vw;
+    height: 0.5vw;
+    background: #ffffff;
+    margin: 1.5vw;
+    transition: 0.3s ease;
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-1vw, 2vw);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-1vw, -2vw);
+}
+
+.main-navigator {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.main-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.main-menu a {
+    text-decoration: none;
+    font-family: "Anonymous Pro", monospace;
+    font-size: 1em;
+    color: #202146;
+    transition: color 0.2s ease;
+    white-space: nowrap;
+}
+
+.main-menu a:hover {
+    color: #bebedc;
+}
+
+.subtitle {
+    color: #202146;
+    padding: 2em 1em 0 0;
+    line-height: 1.5;
+    font-size: clamp(15px, 5vw, 30px);
+}
+
+.title {
+    font-family: "Caviar Dreams";
+    font-size: clamp(40px, 15vw, 90px);
+}
+
+#main-title{
+    letter-spacing: -0.05em;
+}
+
+.first-presentation p {
+    font-size: clamp(5px, 5vw, 25px);
+    line-height: 1.5;
+    max-width: 65ch;
+}
+
+.buttons-cta {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.button-cta {
+    transition: 0.2s ease;
+}
+
+.button-cta:hover {
+    opacity: 0.5;
+}
+
+#button-work {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.7em;
+    font-size: 15px;
+    background: linear-gradient(to right, #615aa4, #bebedc);
+    border: none;
+    border-radius: 5rem;
+    color: white;
+}
+
+#button-talk {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.7em;
+    font-size: 15px;
+    color: #202146;
+    border: 1px solid #202146;
+    border-radius: 5rem;
+    background: none;
+}
+
+.cards-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    margin-top: 34px;
+}
+
+.card {
+  padding: 1.5em;
+  background-color: #fff;
+  border-radius: 1em;
+  font-size: smaller;
+}
+
+.card .card-description {
+  font-size: small;
+  color: #a3a3b1;
+}
+
+
+#portfolio {
+    padding: 5vw;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: linear-gradient(to right, #202146, #615AA4);
+    border-radius: 2em;
+}
+
+.img-background-orbit {
+    margin: 1vw;
+    z-index: 0;
+    opacity: 0.1;
+    mix-blend-mode: lighten;
+    position: absolute;
+    left: 1vh;
+    width: 50vw;
+}
+
+@media (max-width: 725px) {
+    .img-background-orbit {
+        margin: 3vh;
+        left: -5vw;
+        width: 90vw;
+    }
+}
+
+#portfolio-title {
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(302px, 1fr));
+    gap: 1.5em;
+    text-align: center;
+    align-items: center;
+    font-family: "Caviar Dreams";
+    color: white;
+    font-size: clamp(30px, 4.5vw, 50px);
+}
+
+#portfolio h1 {
+    padding-inline: 3vh;
+}
+
+#portfolio-subtitle {
+    padding-inline: 3vh;
+    padding-top: 0;
+    text-align: left;
+    color: white;
+    font-size: clamp(15px, 2vw, 20px);
+}
+
+.portfolio-work {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 34px;
+    justify-content: center;
+}
+
+.portfolio-work a {
+    max-width: 45%;
+    min-width: 300px;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.portfolio-item-link {
+    align-content: center;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 2em;
+}
+
+.image {
+    width: 100%;
+    display: block;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+#portfolio-image {
+    width: 100%;
+    display: block;
+    background-color: white;
+    border-radius: 2em;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-title-overlay {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Caviar Dreams";
+    color: white;
+    font-size: clamp(20px, 3.5vw, 40px);
+    font-weight: bold;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+#portfolio-subtitle-overlay {
+    margin: 1.5em 0 0 0;
+    top: 60%;
+    font-family: Anonymous Pro;
+    font-weight: normal;
+    font-size: clamp(10px, 1.5vw, 15px);
+}
+
+.portfolio-item-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.portfolio-item-link:hover::before {
+    opacity: 1;
+}
+
+.portfolio-item-link:hover #portfolio-image {
+  transform: scale(1.05);
+}
+
+.portfolio-item-link:hover .portfolio-title-overlay {
+  opacity: 1;
+}
+
+
+.about {
+    margin-top: 5%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    margin-top: 34px;
+}
+
+#about-card {
+    padding: 6em;
+    align-content: center;
+    background: none;
+    border: 1px solid #202146;
+    border-radius: 1em;
+    font-size: medium;
+}
+
+.subtitle-icon {
+    width: 1em;
+    flex-shrink: 0;
+}
+
+#about-title {
+    font-size: clamp(40px, 15vw, 50px);
+}
+
+.about-subtitle {
+    font-family: "Caviar Dreams";
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.about p {
+    line-height: 1.5;
+}
+
+.about-p1 {
+    color: #615AA4;
+}
+
+.about-p2 {
+    color: #9c97b8;
+
+}
+
+
+.full-lenght {
+    width: 100%;
+    background-color: #202146;
+    border-radius: 30px 30px 0 0;
+}
+
+#contact {
+    color: white;
+    padding: 2em;
+    line-height: 1.5;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+#contact-subtitle {
+    color: white;
+    font-family: "Caviar Dreams";
+}
+
+.contact-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+    gap: 15px;
+    margin-top: 2em;
+}
+
+.contact-button {
+    padding: 0.5em;
+    padding-inline: 1em;
+    text-decoration: none;
+    background: linear-gradient(to right, #202146, #615AA4);
+    color: white;
+    transition: 0.2s ease;
+    border: 1px solid white;
+    border-radius: 5em;
+    display: flex;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.contact-button:hover {
+    opacity: 0.5;
+}
+
+#contact-icon {
+    filter: invert(100%);
+}
+
+fieldset {
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 1em;
+}
+
+legend {
+    font-family: "Caviar Dreams";
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.contact-input {
+    display: grid;
+    padding: 1em;
+}
+
+.input-contactform {
+    color: #202146;
+    background: linear-gradient(to right, #d2d0df, #b0adce);
+    border-radius: 18px;
+    border: 0;
+    padding: 10px;
+}
+
+.input-contactform::placeholder {
+  font-family: "Caviar Dreams";
+  color: #788097;   /* cor do placeholder */
+  opacity: 1;
+  font-style: italic;
+}
+
+.button-submit {
+    font-family: "Caviar Dreams";
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    width: max-content;
+    cursor: pointer;
+    background: linear-gradient(to right, #d2d0df, #b0adce);
+    color: #202146;
+}
+
+.button-submit:hover {
+    background: #9c97b8;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 2em;
+}
+
+@media (max-width: 999px) {
+
+}
+
+/* Language Pill */
+.lang-pill {
+    position: absolute;
+    top: 30px;
+    right: 10vw;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #202146;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.6);
+    overflow: hidden;
+    font-family: "Anonymous Pro", monospace;
+}
+
+.lang-pill button {
+    padding: .45em .75em;
+    border: 0;
+    background: transparent;
+    color: #202146;
+    cursor: pointer;
+    transition: background .25s ease, color .25s ease, opacity .25s ease;
+    font-size: 14px;
+}
+
+.lang-pill .sep {
+    width: 1px;
+    height: 1.2em;
+    background: rgba(32, 33, 70, 0.25);
+}
+
+.lang-pill button.active {
+    background: #202146;
+    color: #fff;
+}
+
+@media (max-width: 999px) {
+    #header-container {
+        position: relative;
+    }
+    
+    html, body {
+        overflow-x: hidden;
+    }
+
+    #header-container {
+        background-color: #202146;
+    }
+
+    .brand-logo {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .main-navigator {
+        position: absolute;
+        top: 18vw;
+        right: 0;
+        width: 50vw;
+        height: 100vh;
+        background: #202146;
+        color: white;
+        border-radius: 0 0 0 30px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        z-index: 3;
+    }
+
+    .main-menu {
+        font-size: 5vw;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        color: white;
+    }
+
+    .main-menu a {
+        margin-left: 0;
+        color: white;
+        display: block;
+    }
+
+    .main-navigator.active {
+        transform: translateX(0);
+    }
+
+    #about-card {
+        padding: 40px 30px;
+        text-align: left;
+        align-content: stretch;
+        height: auto;
+    }
+
+    .lang-pill {
+        top: 6.5vw;
+        right: 20vw;
+        border-color: #fff;
+        background: rgba(255, 255, 255, 0.08);
+        z-index: 9999;
+    }
+
+    .lang-pill button {
+        color: #fff;
+    }
+
+    .lang-pill button.active {
+        background: #fff;
+        color: #202146;
+    }
+}
+
+/* /Language Pill */

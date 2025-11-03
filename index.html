@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <meta name="description" content="CROOMA Design Studio — Brand design studio. We craft visual identity, social media, websites and apps — from first spark to full presence." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://croomastudio.com/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <meta property="og:title" content="CROOMA Design Studio — Brand Design" />
+    <meta property="og:description" content="We craft visual identity, social media, websites and apps — from first spark to full presence." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://croomastudio.com/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="CROOMA Design Studio — Brand Design" />
+    <meta name="twitter:description" content="We craft visual identity, social media, websites and apps — from first spark to full presence." />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="images/Logos - CROOMA/Simbolo Principal.png"/>
+    <title>CROOMA Design Studio</title>
+  </head>
+
+  <body>
+    <div id="header-container" class="container">
+      <header>
+        <div>
+          <a href="/" class="brand-logo">
+            <img
+              src="images/Logos - CROOMA/Logo Principal Horizontal.png"
+              alt="Logotipo Crooma Design Studio"
+              class="brand-logo-img"
+            />
+          </a>
+          <div class="lang-pill" aria-label="Language switch">
+            <button
+              id="lang-en"
+              type="button"
+              onclick="setLanguage('en')"
+              aria-pressed="false"
+            >
+              EN
+            </button>
+            <div class="sep"></div>
+            <button
+              id="lang-pt"
+              type="button"
+              onclick="setLanguage('pt')"
+              aria-pressed="false"
+            >
+              PT
+            </button>
+          </div>
+
+          <a href="/" class="mobile-logo">
+            <img
+              src="images/Logos - CROOMA/Logo Horizontal Monocromatico -  Branco.png"
+              alt="Logotipo Crooma Design Studio"
+              class="brand-logo-img-mobile"
+            />
+          </a>
+        </div>
+
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <nav class="main-navigator">
+          <ul class="main-menu">
+            <li>
+              <a href="/"><span data-i18n="nav.home">Home</span></a>
+            </li>
+            <li>
+              <a href="#portfolio"
+                ><span data-i18n="nav.portfolio">Portfolio</span></a
+              >
+            </li>
+            <li>
+              <a href="#contact"
+                ><span data-i18n="nav.contact">Contact us</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="container">
+      <section class="first-presentation">
+        <div class="subtitle">
+          <span data-i18n="hero.tagline">Brand Design Studio</span>
+        </div>
+        <h1 id="main-title" class="title">
+          <span data-i18n="hero.title"
+            >All your brand phases in one place.</span
+          >
+        </h1>
+        <p>
+          <span data-i18n="hero.desc"
+            >We design identity, social media, websites, apps and printed
+            materials — a complete visual orbit for your brand. From first spark
+            to full presence.</span
+          >
+        </p>
+        <div class="buttons-cta">
+          <a href="#portfolio" id="button-work" class="button-cta"
+            ><span data-i18n="cta.work">Check out our work</span></a
+          >
+          <a
+            href="https://wa.me/message/JGO6CBHLOK7OG1"
+            target="_blank"
+            rel="noopener noreferrer"
+            id="button-talk"
+            class="button-cta"
+            ><span data-i18n="cta.talk">Talk to us</span></a
+          >
+        </div>
+      </section>
+      <section class="cards-services">
+        <div class="card">
+          <h2 class="card-title">
+            <span data-i18n="card.identity.title">Identity</span>
+          </h2>
+          <p class="card-description">
+            <span data-i18n="card.identity.desc"
+              >Logo, palette, typography, brand rules</span
+            >
+          </p>
+        </div>
+
+        <div class="card">
+          <h2 class="card-title">
+            <span data-i18n="card.sites.title">Sites & Apps</span>
+          </h2>
+          <p class="card-description">
+            <span data-i18n="card.sites.desc"
+              >Design, layouts, responsive, prototypes</span
+            >
+          </p>
+        </div>
+
+        <div class="card">
+          <h2 class="card-title">
+            <span data-i18n="card.social.title">Social Media</span>
+          </h2>
+          <p class="card-description">
+            <span data-i18n="card.social.desc">
+              Templates, posts, reels covers, content system
+            </span>
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <section id="portfolio" class="container">
+      <img src="images/Logos - CROOMA/orbit.png" class="img-background-orbit" />
+      <div id="portfolio-title" class="title">
+        <h1><span data-i18n="nav.portfolio">Portfolio</span></h1>
+        <div id="portfolio-subtitle" class="subtitle">
+          <span data-i18n="portfolio.subtitle">
+            A journey through the brands we've designed, where strategy and
+            creativity align in the same orbit.
+          </span>
+        </div>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-work">
+          <a href="studio-confie.html" class="portfolio-item-link">
+            <img
+              src="images/Imagens Portfolio/estudio confie.jpg"
+              alt="Image-work Estudio Confie"
+              id="portfolio-image"
+              class="image" loading="lazy"
+            />
+            <div class="portfolio-title-overlay">
+              <span data-i18n="overlay.confie">Confie Pilates Studio</span>
+            </div>
+            <div
+              id="portfolio-subtitle-overlay"
+              class="portfolio-title-overlay"
+            >
+              <span data-i18n="overlay.confie.sub"
+                >Complete Branding and Visual Identity.</span
+              >
+            </div>
+          </a>
+
+          <a href="neonuttra.html" class="portfolio-item-link">
+            <img
+              src="images/Imagens Portfolio/neonuttra social media.jpg"
+              alt="Image-work Neonuttra"
+              id="portfolio-image"
+              class="image" loading="lazy"
+            />
+            <div class="portfolio-title-overlay">
+              <span data-i18n="overlay.neonuttra">Neonuttra</span>
+            </div>
+            <div
+              id="portfolio-subtitle-overlay"
+              class="portfolio-title-overlay"
+            >
+              <span data-i18n="overlay.neonuttra.sub"
+                >Social media and Branding material designs.</span
+              >
+            </div>
+          </a>
+
+          <a href="fire.html" class="portfolio-item-link">
+            <img
+              src="images/Imagens Portfolio/Apresentacao Fire 1.jpg"
+              alt="Image-work Logo Fire"
+              id="portfolio-image"
+              class="image" loading="lazy"
+            />
+            <div class="portfolio-title-overlay">
+              <span data-i18n="overlay.fire">Fire</span>
+            </div>
+            <div
+              id="portfolio-subtitle-overlay"
+              class="portfolio-title-overlay"
+            >
+              <span data-i18n="overlay.fire.sub"
+                ><span data-i18n="overlay.paula.sub"
+                  ><span data-i18n="overlay.fire.sub"
+                    >Logo Construction and<span data-i18n="card.social.title"
+                      >Social Media</span
+                    >.</span
+                  ></span
+                ></span
+              >
+            </div>
+          </a>
+
+          <a href="luxmed.html" class="portfolio-item-link">
+            <img
+              src="images/Imagens Portfolio/luxmed.jpg"
+              alt="Image-work Logo Luxmed"
+              id="portfolio-image"
+              class="image" loading="lazy"
+            />
+            <div class="portfolio-title-overlay">
+              <span data-i18n="overlay.luxmed">Luxmed</span>
+            </div>
+            <div
+              id="portfolio-subtitle-overlay"
+              class="portfolio-title-overlay"
+            >
+              <span data-i18n="overlay.luxmed.sub"
+                ><span data-i18n="overlay.dejane.sub"
+                  >Visual Identity.</span
+                ></span
+              >
+            </div>
+          </a>
+
+          <a href="trader-raiz.html" class="portfolio-item-link">
+            <img
+              src="images/Imagens Portfolio/trader raiz.jpg"
+              alt="Image-work Identity Trader Raiz"
+              id="portfolio-image"
+              class="image" loading="lazy"
+            />
+            <div class="portfolio-title-overlay">
+              <span data-i18n="overlay.trader">Trader Raiz</span>
+            </div>
+            <div
+              id="portfolio-subtitle-overlay"
+              class="portfolio-title-overlay"
+            >
+              <span data-i18n="overlay.trader.sub"
+                >Complete reBranding, Visual Identity and<span
+                  data-i18n="card.social.title"
+                  >Social Media</span
+                >.</span
+              >
+            </div>
+          </a>
+
+          <a href="paula-ismerio.html" class="portfolio-item-link">
+            <img
+              src="images/Imagens Portfolio/paula ismerio.jpg"
+              alt="Image-work Paula Ismerio"
+              id="portfolio-image"
+              class="image" loading="lazy"
+            />
+            <div class="portfolio-title-overlay">
+              <span data-i18n="overlay.paula">Paula Ismério</span>
+            </div>
+            <div
+              id="portfolio-subtitle-overlay"
+              class="portfolio-title-overlay"
+            >
+              <span data-i18n="overlay.fire.sub">
+                Logo Construction and<span data-i18n="card.social.title"
+                  >Social Media</span
+                >.
+              </span>
+            </div>
+          </a>
+
+          <a
+            href="institute-dr-gabriel-machado.html"
+            class="portfolio-item-link"
+          >
+            <img
+              src="images/Imagens Portfolio/Instituto Dr. Gabriel Machado.jpg"
+              alt="Image-work Institute Dr. Gabriel Machado"
+              id="portfolio-image"
+              class="image" loading="lazy"
+            />
+            <div class="portfolio-title-overlay">
+              <span data-i18n="overlay.institute"
+                >Institute Dr. Gabriel Machado</span
+              >
+            </div>
+            <div
+              id="portfolio-subtitle-overlay"
+              class="portfolio-title-overlay"
+            >
+              <span data-i18n="overlay.institute.sub">Logo reBranding.</span>
+            </div>
+          </a>
+
+          <a href="hipica-fluminense.html" class="portfolio-item-link">
+            <img
+              src="images/Imagens Portfolio/Logo Hipica Fluminense foto.jpg"
+              alt="Image-work Hípica Fluminense"
+              id="portfolio-image"
+              class="image" loading="lazy"
+            />
+            <div class="portfolio-title-overlay">
+              <span data-i18n="overlay.hipica">Hípica Fluminense</span>
+            </div>
+            <div
+              id="portfolio-subtitle-overlay"
+              class="portfolio-title-overlay"
+            >
+              <span data-i18n="overlay.hipica.sub">Logo Construction.</span>
+            </div>
+          </a>
+
+          <a href="o-burgues.html" class="portfolio-item-link">
+            <img
+              src="images/Imagens Portfolio/Outdoor mockup.png"
+              alt="Image-work O Burgues"
+              id="portfolio-image"
+              class="image" loading="lazy"
+            />
+            <div class="portfolio-title-overlay">
+              <span data-i18n="overlay.burgues">O Burguês</span>
+            </div>
+            <div
+              id="portfolio-subtitle-overlay"
+              class="portfolio-title-overlay"
+            >
+              <span data-i18n="overlay.burgues.sub"
+                >Outdoor and Flyer design.</span
+              >
+            </div>
+          </a>
+
+          <a href="course-dejane-almeida.html" class="portfolio-item-link">
+            <img
+              src="images/Imagens Portfolio/dejane almeida.jpg"
+              alt="Image-work Dejane Almeida"
+              id="portfolio-image"
+              class="image" loading="lazy"
+            />
+            <div class="portfolio-title-overlay">
+              <span data-i18n="overlay.dejane">Course Dejane Almeida</span>
+            </div>
+            <div
+              id="portfolio-subtitle-overlay"
+              class="portfolio-title-overlay"
+            >
+              <span data-i18n="overlay.dejane.sub"> Visual Identity. </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="about">
+        <div>
+          <div id="about-title" class="title">
+            <span data-i18n-html="about.title.long">
+              We believe that design creates and connects identities across
+              galaxies of <strong>creativity and strategy.</strong>
+            </span>
+          </div>
+          <div class="subtitle"><span data-i18n="about.subtitle.intro">
+            At Crooma Design Studio, every project revolves around two core ideas:</span>
+        </div>
+        <div class="about-cards">
+          <div id="about-card" class="card">
+            <h2 class="about-subtitle">
+              <img class="subtitle-icon" src="images/estrela icon.svg" /><span
+                data-i18n="about.card1.title"
+                >Essence</span
+              >
+            </h2>
+            <p class="about-p1">
+              <span data-i18n="about.card1.p1">
+                Transforming brands into constellations that shine through
+                visual identity, online presence, and digital experience. We
+                align purpose and aesthetics to create designs that resonate
+                through space and time.
+              </span>
+            </p>
+            <p class="about-p2">
+              <span data-i18n="about.card1.tags"
+                >// visual identity // motion // brand design</span
+              >
+            </p>
+          </div>
+          <div id="about-card" class="card">
+            <h2 class="about-subtitle">
+              <img class="subtitle-icon" src="images/orbit icon.svg" /><span
+                data-i18n="about.card2.title"
+                >Orbit</span
+              >
+            </h2>
+            <p class="about-p1">
+              <span data-i18n="about.card2.p1">
+                Our approach merges art and structure — we navigate through
+                research, design systems, and storytelling to craft visuals that
+                speak and strategies that move. Each brand we create has its own
+                gravity, its own light.
+              </span>
+            </p>
+            <p class="about-p2">
+              <span data-i18n="about.card2.tags"
+                >// digital presence // social media // web & apps</span
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="contact-us" class="full-lenght">
+      <div id="contact" class="container">
+        <div class="contact-side">
+          <div id="contact-subtitle" class="subtitle">
+            <span data-i18n-html="contact.lets">Let's build your </span
+            ><strong data-i18n="contact.galaxy">GALAXY!</strong>
+          </div>
+          <p>
+            <strong
+              ><span data-i18n="contact.fullbrand"
+                >Full brand design:</span
+              ></strong
+            ><span data-i18n="contact.fullbrand.desc">
+              Visual identity, digital and printed materials. </span
+            ><br />
+
+            <strong
+              ><span data-i18n="contact.digital"
+                >Establishing digital presence:</span
+              ></strong
+            ><span data-i18n="contact.digital.desc">
+              Websites, Apps and<span data-i18n="card.social.title"
+                >Social Media</span
+              >services. </span
+            ><br /><br />
+          </p>
+
+          <p>
+            <span data-i18n="contact.wework">
+              We work with startups and established businesses to shape their
+              visual universe.</span
+            ><br /><br />
+            <strong
+              ><span data-i18n="contact.begin"
+                >Contact us now and begin your mission:</span
+              ></strong
+            >
+          </p>
+
+          <div class="contact-buttons">
+            <a
+              href="https://wa.me/message/JGO6CBHLOK7OG1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-button"
+            >
+              <img
+                src="images/whatsapp.svg"
+                id="contact-icon"
+                class="subtitle-icon"
+              />
+              +55 21 97358-3983
+            </a>
+
+            <a
+              href="https://www.instagram.com/crooma.design/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-button"
+            >
+              <img
+                src="images/insta.svg"
+                id="contact-icon"
+                class="subtitle-icon"
+              />
+              @crooma.design
+            </a>
+
+            <a
+              href="mailto:studiocrooma@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-button"
+            >
+              <img
+                src="images/email.svg"
+                id="contact-icon"
+                class="subtitle-icon"
+              />
+              studiocrooma@gmail.com
+            </a>
+          </div>
+        </div>
+        <fieldset>
+          <legend>
+            <span data-i18n="contact.form.legend">Contact Form</span>
+          </legend>
+          <form id="contactForm" action="/send.php" method="POST" class="contact-form">
+            <div class="contact-input">
+              <label for="name"><span data-i18n="form.name">Name:</span></label>
+              <input
+                class="input-contactform"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Type your full name."
+                autocomplete="name"
+                required
+                data-i18n-ph="ph.name"
+              />
+            </div>
+            <div class="contact-input">
+              <label for="email"
+                ><span data-i18n="form.email">Email:</span></label
+              >
+              <input
+                class="input-contactform"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Type your email."
+                autocomplete="email"
+                required
+                data-i18n-ph="ph.email"
+              />
+            </div>
+            <div class="contact-input">
+              <label for="message"
+                ><span data-i18n="form.message">Message:</span></label
+              >
+              <textarea
+                class="input-contactform"
+                type="text"
+                rows="4"
+                id="message"
+                name="message"
+                placeholder="Tell us about your project."
+                required
+                data-i18n-ph="ph.message"
+              ></textarea>
+            </div>
+            <div class="contact-input">
+                <input type="hidden" name="subject" value="Contato pelo site">
+              <button type="submit" id="submit-button" class="button-submit">
+                <span data-i18n="form.send">Send your message</span>
+              </button>
+              
+            </div>
+          </form>
+        </fieldset>
+      </div>
+
+      <footer>
+        <span data-i18n="footer.copy"
+          >© CROOMA Design Studio — Brand design in orbit</span
+        >
+      </footer>
+    </div>
+    <script src="mobile-navbar.js"></script>
+    <script src="i18n.js"></script>
+  </body>
+</html>
