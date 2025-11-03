@@ -102,7 +102,7 @@ Combinamos estética, estratégia e emoção para criar identidades únicas, web
 **Bruno Lorran Sanches do Vale**  
 Designer gráfico & web developer  
 📍 Rio de Janeiro, Brasil  
-📸 [@croomastudio](https://instagram.com/croomastudio)  
+📸 [@crooma.design](https://www.instagram.com/crooma.design/)  
 🌐 [www.croomastudio.com](https://www.croomastudio.com)
 
 ---
